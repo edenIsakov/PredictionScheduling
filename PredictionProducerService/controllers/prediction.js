@@ -3,13 +3,13 @@ const { addTaskToQueue } = require('../services/prediction');
 
 
 startPrediction = async function (req, res, next) {
-  const { customerId, model, dataPath } = req.body;
+  const { customerId, model, datapath } = req.body;
   const reqId = GUID.create();
   const task = {
     reqId,
     customerId,
     model,
-    dataPath
+    datapath
   };
   try {
     const result = await addTaskToQueue(task);
