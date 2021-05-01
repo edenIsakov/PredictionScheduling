@@ -1,0 +1,11 @@
+{
+  "queueUrl": "amqp://localhost",
+  "queueName": "Tasks",
+  "failQueueName": "FailedTasks",
+  "db": {
+    "host": "localhost",
+    "user": "root",
+    "password": "root",
+    "database": "pecan"
+  }
+}
