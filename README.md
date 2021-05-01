@@ -9,7 +9,7 @@ In this repo there are three services:
 Prediction Producer Servicer, the communication between them is REST API.
 - prediction-producer-service:  A service that gets on-demand prediction requests from the
 prediction client and puts them in the queue.
-- prediction-consumer: A multi-threaded process that reads from the queue, calls the
+- prediction-consumer: A multi-threaded process (currently running two workers) that reads from the queue, calls the
 model prediction code, and writes the result to the Database along with the request details.
 
 ## Installation
